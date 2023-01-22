@@ -1,0 +1,34 @@
+----------------------------------APIs Documentation----------------------------------
+
+1. http://localhost:8000/
+-> Register route where user can create a account by generating a OTP, redirects to page where user will validate the OTP received on their mobile phone.
+
+2. http://localhost:8000/otp
+-> Validate Registration OTP
+
+3. http://localhost:8000/login
+-> Login route where users can login by their registered mobile number, redirects to page where user will validate the OTP received on their mobile phone.
+
+4. http://localhost:8000/login_otp
+-> Validate the Login OTP
+
+5. http://localhost:8000/main
+-> redirects to the main page after successfull login
+
+6. http://localhost:8000/add_vehicle
+-> Admin can create vehicle from this route
+
+7. http://localhost:8000/vehicle_detail/<int:pk>
+-> Can assign a vehicle to assign or view a particular vehicle in detail
+
+8. http://localhost:8000/add_station
+-> Admin can create Station
+
+9. http://localhost:8000/get_vehicles
+-> User can see available vehicles at a particular station. Accepts a query param in the url
+
+10. http://localhost:8000/pick_vehicle
+-> Users can walk-in to a station and pick a desired vehicle. Creates the history of a user with all details like which vehicle, station picked_at in the database.
+
+11. http://localhost:8000/vehicle_history/<int:pk>
+-> Users a drop a vehicle at any station post-usage. Updates the history of the Vehicle and Vehicle Station
