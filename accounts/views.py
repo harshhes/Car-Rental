@@ -51,7 +51,7 @@ def register(request):
     
     return render(request, 'register.html')
 
-login_required(login_url='/')
+@login_required(login_url='/')
 def otp(request):
     try:
         mobile = request.session['mobile']

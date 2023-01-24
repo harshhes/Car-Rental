@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-AUTH_KEY = 'cfbf6419-9888-11ed-9158-0200cd936042'
+AUTH_KEY = 'your_auth_key'
 
 # Application definition
 
